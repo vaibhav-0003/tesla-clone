@@ -1,18 +1,31 @@
 {
   "name": "tesla",
+  "homepage": "https://vaibhav-0003.github.io/tesla-v-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.2.0",
+    "@fullpage/react-fullpage": "^0.1.19",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-page-scroller": "^2.1.0",
     "react-redux": "^7.2.4",
-    "react-scripts": "4.0.3"
+    "react-reveal": "^1.2.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
